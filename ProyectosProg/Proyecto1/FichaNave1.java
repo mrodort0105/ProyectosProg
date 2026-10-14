@@ -1,10 +1,5 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
 package com.mycompany.proyecto1;
@@ -38,7 +33,7 @@ public class FichaNave1 {
         System.out.print("Introduce el nivel de experiencia inicial (ej: 5): ");
         int nivelExperiencia = teclado.nextInt();
 
-        System.out.print("Introduce el combustible actual en litros (ej: 1450.75): ");
+        System.out.print("Introduce el combustible actual en litros (ej: 1450,75): ");
         double combustibleActual = teclado.nextDouble();
 
         System.out.print("¿Están los sistemas listos? (true/false): ");
@@ -58,7 +53,7 @@ int anosluzEntero = (int) anosLuzDecimal;
 // Datos mostrado en pantalla
 System.out.print("\n Nombre del piloto :" + nombrePiloto);
 System.out.print("\n Rango del piloto :" + rangoPiloto);
-System.out.print("\n Nivel de experiencia +1 :" + nombrePiloto);
+System.out.print("\n Nivel de experiencia +1 :" + nivelExperiencia);
 System.out.print("\n Combustible :" + combustibleActual);
 System.out.print("\n Sistemas listos :" + sistemasListos);
 System.out.print("\n Años luz :" + anosluzEntero);
