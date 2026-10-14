@@ -1,5 +1,10 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
 package com.mycompany.proyecto1;
@@ -19,11 +24,11 @@ public class FichaNave1 {
         
         // Objeto Scanner para la lectura de datos por teclado
         Scanner teclado = new Scanner(System.in);
-
+// Constantes
         final double CAPACIDAD_MAXIMA_LITROS = 2000.0;
         final double CONSUMO_POR_AÑO_LUZ = 180.5;
 
-
+// Variables. Pedidos al usuario
         System.out.print("Introduce el nombre del piloto: ");
         String nombrePiloto = teclado.nextLine();
 
@@ -38,7 +43,7 @@ public class FichaNave1 {
 
         System.out.print("¿Están los sistemas listos? (true/false): ");
         boolean sistemasListos = teclado.nextBoolean();
-        
+        //Añadimos +1 a la experiencia del piloto
         nivelExperiencia++;
         
 // Cálculo de los años luz (con decimales)
@@ -47,9 +52,18 @@ double anosLuzDecimal = combustibleActual / CONSUMO_POR_AÑO_LUZ;
 // Cálculo del porcentaje de tanque lleno
 double porcentajeTanque = (combustibleActual / CAPACIDAD_MAXIMA_LITROS) * 100;
 
-
-int anosluzEnteros = (int) anosLuzDecimal;
-
+// Cansting explicito
+int anosluzEntero = (int) anosLuzDecimal;
        
+// Datos mostrado en pantalla
+System.out.print("\n Nombre del piloto :" + nombrePiloto);
+System.out.print("\n Rango del piloto :" + rangoPiloto);
+System.out.print("\n Nivel de experiencia +1 :" + nombrePiloto);
+System.out.print("\n Combustible :" + combustibleActual);
+System.out.print("\n Sistemas listos :" + sistemasListos);
+System.out.print("\n Años luz :" + anosluzEntero);
+System.out.print("\n Porcentaje tanque :" + porcentajeTanque);
 
-        
+teclado.close();
+}
+}
